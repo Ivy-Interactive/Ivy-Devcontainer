@@ -1,3 +1,5 @@
+using Ivy.Hello.Apps;
+
 CultureInfo.DefaultThreadCurrentCulture = CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 var server = new Server();
 #if !DEBUG
@@ -6,6 +8,7 @@ server.UseHttpRedirection();
 #if DEBUG
 server.UseHotReload();
 #endif
+server.UseDefaultApp(typeof(HelloApp));
 server.AddAppsFromAssembly();
 server.AddConnectionsFromAssembly();
 server.UseHotReload();

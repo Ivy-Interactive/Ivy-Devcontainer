@@ -3,6 +3,8 @@
   "image": "mcr.microsoft.com/dotnet/sdk:9.0",
   "features": {},
   "postCreateCommand": "dotnet tool install -g Ivy.Console",
+  "postStartCommand": "dotnet watch run",
+"postAttachCommand": "code App/HelloApp.cs && code --reuse-window --command workbench.action.splitEditor",
   "forwardPorts": [5010],
   "portsAttributes": {
     "5010": {
@@ -15,6 +17,9 @@
       "settings": {
         "dotnet.defaultSolution": "**/*.sln",
         "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "codespaces": {
+        "openFiles": ["App/HelloApp.cs"]
       },
       "extensions": [
         "ms-dotnettools.csharp",
