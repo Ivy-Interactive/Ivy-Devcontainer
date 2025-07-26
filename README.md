@@ -1,13 +1,6 @@
 # Ivy Devcontainer
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](
-https://github.com/codespaces/new?hide_repo_select=true
-&ref=main
-&repo=Ivy-Interactive/Ivy-Devcontainer
-&machine=standardLinux32gb
-&devcontainer_path=.devcontainer%2Fdevcontainer.json
-&location=WestUs2
-)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=Ivy-Interactive%2FIvy-Devcontainer&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
 
 This repository provides a pre-configured development container for **.NET 9** projects with the `Ivy.Console` tool pre-installed. It is designed for **GitHub Codespaces** or **VS Code Remote - Containers**.
 
