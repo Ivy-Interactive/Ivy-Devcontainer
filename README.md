@@ -11,6 +11,8 @@ This repository provides a pre-configured development container for **.NET 9** p
 3. Once the dev container is ready it will start the Ivy server and open a browser showing the HelloApp. 
 4. You can now make changes to `Apps/HelloApp.cs` and it will automatically hot-reload in the browser.
 
+![Ivy Devcontainer](image.png)
+
 ## 🧹 Maintaining Your Codespaces
 
 GitHub Codespaces automatically manages your development containers, so you usually **don’t need to manually stop them**. However, here are a few tips to keep your environment clean and fast:
