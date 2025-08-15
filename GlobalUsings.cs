@@ -14,6 +14,7 @@ global using Ivy.Shared;
 global using Ivy.Views.Tables;
 global using Ivy.Widgets.Inputs;
 global using Ivy.Hooks;
+global using Ivy.Chrome;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Logging;

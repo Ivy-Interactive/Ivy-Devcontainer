@@ -8,7 +8,19 @@ server.UseHttpRedirection();
 #if DEBUG
 server.UseHotReload();
 #endif
-server.UseDefaultApp(typeof(HelloApp));
+
+var version = typeof(Server).Assembly.GetName().Version!.ToString().EatRight(".0");
+server.SetMetaTitle($"Ivy Hello {version}");
+
+var chromeSettings = new ChromeSettings()
+    .Header(
+        Layout.Vertical().Padding(2)
+        | new IvyLogo()
+        | Text.Muted($"Version {version}")
+    )
+    .DefaultApp<HelloApp>()
+    .UseTabs(preventDuplicates: true);
+
 server.AddAppsFromAssembly();
 server.AddConnectionsFromAssembly();
 server.UseHotReload();
