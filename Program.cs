@@ -21,8 +21,9 @@ var chromeSettings = new ChromeSettings()
     .DefaultApp<HelloApp>()
     .UseTabs(preventDuplicates: true);
 
+server.UseChrome(() => new DefaultSidebarChrome(chromeSettings));
+
 server.AddAppsFromAssembly();
 server.AddConnectionsFromAssembly();
-server.UseHotReload();
-server.UseChrome();
+
 await server.RunAsync();
