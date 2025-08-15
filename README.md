@@ -8,7 +8,8 @@ This repository provides a pre-configured development container for **.NET 9** p
 
 1. Click the **"Open in GitHub Codespaces"** badge above.
 2. Wait for the Codespace to start (it will use `.devcontainer/devcontainer.json` for setup).
-3. Once the dev container is ready, you can make changes to `Apps/HelloApp.cs` and it will automaticallt hot-reload in the browser.
+3. Once the dev container is ready it will start the Ivy server and open a browser showing the HelloApp. 
+4. You can now make changes to `Apps/HelloApp.cs` and it will automatically hot-reload in the browser.
 
 ## 🧹 Maintaining Your Codespaces
 
